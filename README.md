@@ -30,7 +30,6 @@ A turn-based roleplaying game where you play as a Carolianian freshie, on the mi
 ## Development Instructions
 
 ## Development Team
-## Development Team
 
 | ID | Name | Role |
 |---|---|---|

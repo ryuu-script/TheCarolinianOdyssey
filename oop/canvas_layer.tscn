@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://bvledy7h4o442"]
+
+[ext_resource type="Script" uid="uid://lvebrba3418n" path="res://control.gd" id="1_0qrqu"]
+[ext_resource type="Script" uid="uid://btg0qt77xat1j" path="res://student.gd" id="4_fsbdh"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=854705914]
+
+[node name="Control" type="Control" parent="." unique_id=164979335]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_0qrqu")
+
+[node name="teacher" type="ProgressBar" parent="Control" unique_id=754072158]
+layout_mode = 0
+offset_left = 255.0
+offset_top = 23.0
+offset_right = 508.0
+offset_bottom = 50.0
+value = 30.0
+
+[node name="attack" type="Button" parent="Control" unique_id=1068197808]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 252.0
+offset_right = 177.0
+offset_bottom = 283.0
+text = "attack"
+
+[node name="block" type="Button" parent="Control" unique_id=770716308]
+layout_mode = 0
+offset_left = 247.0
+offset_top = 253.0
+offset_right = 297.0
+offset_bottom = 284.0
+text = "block"
+
+[node name="student" type="ProgressBar" parent="Control" unique_id=1775578633]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 162.0
+offset_right = 260.0
+offset_bottom = 189.0
+max_value = 500.0
+value = 500.0
+script = ExtResource("4_fsbdh")
+
+[node name="Label" type="Label" parent="Control" unique_id=222255865]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 216.0
+offset_right = 573.0
+offset_bottom = 239.0
+horizontal_alignment = 1
+
+[node name="Timer" type="Timer" parent="Control" unique_id=1664100225]
+one_shot = true

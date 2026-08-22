@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://bsrrp2lp3775m"]
+
+[ext_resource type="Script" uid="uid://dmr4sqxn6yuoq" path="res://area_2d.gd" id="1_0e48y"]
+[ext_resource type="PackedScene" uid="uid://b7rvrxj2mpuiq" path="res://character_body_2d.tscn" id="2_0e48y"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_op1xx"]
+
+[node name="Node2D" type="Node2D" unique_id=1329224888]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=2062383849]
+position = Vector2(257, 58)
+script = ExtResource("1_0e48y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1947980790]
+shape = SubResource("CircleShape2D_op1xx")
+
+[node name="Label" type="Label" parent="Area2D" unique_id=2123949933]
+offset_left = -19.0
+offset_top = 6.0
+offset_right = 21.0
+offset_bottom = 29.0
+
+[node name="Timer" type="Timer" parent="Area2D" unique_id=617182748]
+one_shot = true
+
+[node name="CharacterBody2D" parent="." unique_id=1914306016 instance=ExtResource("2_0e48y")]
+position = Vector2(110, 68)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1017288523]
+position = Vector2(30, 78)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=1449333011]
+position = Vector2(592.0514, -141)
+scale = Vector2(12.409087, 1.6160715)
+polygon = PackedVector2Array(-54.7221, -0.61878586, 70.93536, -2.4751377, 75.18269, 34.65193, 44.076454, 541.4364, -62.619537, 455.42538, -51.17631, 34.65193, -49.886936, 452.33145, 43.83699, 434.13177, 42.94825, 35.8895, -55.044445, 41.45856)

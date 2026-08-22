@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://b7dnevhrgjeh6"]
+
+[ext_resource type="PackedScene" uid="uid://b7rvrxj2mpuiq" path="res://character_body_2d.tscn" id="1_vsjny"]
+
+[node name="Node2D" type="Node2D" unique_id=76417480]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1989447540]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=1645843256]
+position = Vector2(65, 117)
+polygon = PackedVector2Array(-2, -2, 278, 41, 480, -2, 559, 128, -28, 122)
+
+[node name="CharacterBody2D" parent="." unique_id=1914306016 instance=ExtResource("1_vsjny")]
+position = Vector2(397, 66)
